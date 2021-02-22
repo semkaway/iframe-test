@@ -2,18 +2,26 @@
 <html>
     <head>
         <title>Test iframe - FTQ</title>
+        <style>
+            .container {
+                padding: 1rem 10rem;
+                background-color:lightgray;
+            }
+        </style>
     </head>
     <body>
         <a href="index.html">Go back to GG</a>
-        <div id="a9-parent-iframe" data-src="https://www.gymglish.com.m1.tek.a9english.com/partner/kseniiatestpartner/2/iframe"></div>
-        <script>
-            (function(){
-                var js = document.createElement('script');
-                js.type='text/javascript';
-                js.src='https://www.gymglish.com/static/scripts/partner-iframe.min.js';
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(js, s);
-            })();
-        </script>
+        <div class="container">
+            <div id="a9-parent-iframe" data-src="https://www.gymglish.com.m1.tek.a9english.com/partner/kseniiatestpartner/2/iframe"></div>
+            <script>
+                (function(){
+                    var js = document.createElement('script');
+                    js.type='text/javascript';
+                    js.src='https://www.gymglish.com/static/scripts/partner-iframe.min.js';
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(js, s);
+                })();
+            </script>
+        </div>
     </body>
  </html>
